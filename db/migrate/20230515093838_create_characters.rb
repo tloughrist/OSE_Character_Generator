@@ -11,6 +11,7 @@ class CreateCharacters < ActiveRecord::Migration[7.0]
       t.integer :charisma
       t.integer :hp
       t.integer :xp
+      t.integer :coins
       t.integer :armor_class
       t.string :climb_sheer_surfaces
       t.string :find_and_remove_treasure_traps
@@ -23,6 +24,7 @@ class CreateCharacters < ActiveRecord::Migration[7.0]
       t.string :falling
       t.string :tightrope_walking
       t.string :tracking
+      t.string :assassination
 
       t.timestamps
     end

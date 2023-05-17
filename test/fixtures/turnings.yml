@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: 1
+  1hd: MyString
+  2hd: MyString
+  3hd: MyString
+  4hd: MyString
+  5hd: MyString
+  6hd: MyString
+  7-9hd: MyString
+
+two:
+  level: 1
+  1hd: MyString
+  2hd: MyString
+  3hd: MyString
+  4hd: MyString
+  5hd: MyString
+  6hd: MyString
+  7-9hd: MyString

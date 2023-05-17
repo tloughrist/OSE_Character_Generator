@@ -1,0 +1,2 @@
+class Turning < ApplicationRecord
+end

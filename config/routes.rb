@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :turnings
   resources :spell_per_levels
   resources :hit_dices
   resources :experience_levels
