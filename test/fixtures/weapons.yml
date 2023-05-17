@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  damage: MyString
+  range: MyString
+  blunt: false
+  brace: false
+  charge: false
+  melee: false
+  missile: false
+  reload: false
+  slow: false
+  splash_weapon: false
+  two_handed: false
+
+two:
+  name: MyString
+  damage: MyString
+  range: MyString
+  blunt: false
+  brace: false
+  charge: false
+  melee: false
+  missile: false
+  reload: false
+  slow: false
+  splash_weapon: false
+  two_handed: false

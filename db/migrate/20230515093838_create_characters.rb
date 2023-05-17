@@ -20,6 +20,8 @@ class CreateCharacters < ActiveRecord::Migration[7.0]
       t.integer :hp
       t.integer :xp
       t.integer :next_lvl
+      t.integer :attack_bonus
+
 
       t.timestamps
     end

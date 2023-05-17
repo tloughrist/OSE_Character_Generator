@@ -1,0 +1,2 @@
+class AttackBonu < ApplicationRecord
+end

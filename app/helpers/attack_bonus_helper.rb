@@ -1,0 +1,2 @@
+module AttackBonusHelper
+end
