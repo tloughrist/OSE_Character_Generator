@@ -1,2 +1,0 @@
-class SpellPerLevelsController < ApplicationController
-end

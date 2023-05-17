@@ -1,0 +1,2 @@
+class AttackBonusesController < ApplicationController
+end

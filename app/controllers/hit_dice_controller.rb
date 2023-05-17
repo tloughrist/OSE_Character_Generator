@@ -1,0 +1,2 @@
+class HitDiceController < ApplicationController
+end

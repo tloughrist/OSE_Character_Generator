@@ -1,2 +1,0 @@
-class SpellPerLevel < ApplicationRecord
-end

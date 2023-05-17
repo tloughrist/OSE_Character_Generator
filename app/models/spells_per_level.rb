@@ -1,0 +1,2 @@
+class SpellsPerLevel < ApplicationRecord
+end

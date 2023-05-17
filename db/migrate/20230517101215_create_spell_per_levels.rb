@@ -1,6 +1,6 @@
-class CreateSpellPerLevels < ActiveRecord::Migration[7.0]
+class CreateSpellsPerLevels < ActiveRecord::Migration[7.0]
   def change
-    create_table :spell_per_levels do |t|
+    create_table :spells_per_levels do |t|
       t.integer :level
       t.integer :first
       t.integer :second

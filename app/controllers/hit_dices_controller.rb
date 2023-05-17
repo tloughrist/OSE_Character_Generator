@@ -1,2 +1,0 @@
-class HitDicesController < ApplicationController
-end

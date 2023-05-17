@@ -1,0 +1,2 @@
+module HitDiceHelper
+end
