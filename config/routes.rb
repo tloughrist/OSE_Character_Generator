@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :playe_heritages
+  resources :player_classes
   resources :turnings
   resources :spell_per_levels
   resources :hit_dices
