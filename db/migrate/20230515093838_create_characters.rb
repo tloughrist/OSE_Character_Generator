@@ -1,10 +1,7 @@
 class CreateCharacters < ActiveRecord::Migration[7.0]
   def change
     create_table :characters do |t|
-      t.references :user, null: false, foreign_key: true
       t.string :name
-      t.references :char_class, null: true, foreign_key: true
-      t.references :char_heritage, null: true, foreign_key: true
       t.integer :level
       t.integer :strength
       t.integer :dexterity
@@ -12,16 +9,20 @@ class CreateCharacters < ActiveRecord::Migration[7.0]
       t.integer :wisdom
       t.integer :intelligence
       t.integer :charisma
-      t.integer :save_v_death
-      t.integer :save_v_wands
-      t.integer :save_v_paralysis
-      t.integer :save_v_breath
-      t.integer :save_v_spells
       t.integer :hp
       t.integer :xp
-      t.integer :next_lvl
-      t.integer :attack_bonus
-
+      t.integer :armor_class
+      t.string :climb_sheer_surfaces
+      t.string :find_and_remove_treasure_traps
+      t.string :hear_noise
+      t.string :hide_in_shadows
+      t.string :move_silently
+      t.string :open_locks
+      t.string :pick_pockets
+      t.string :read_languages
+      t.string :falling
+      t.string :tightrope_walking
+      t.string :tracking
 
       t.timestamps
     end

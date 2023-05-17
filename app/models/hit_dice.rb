@@ -1,0 +1,2 @@
+class HitDice < ApplicationRecord
+end

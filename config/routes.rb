@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :spell_per_levels
+  resources :hit_dices
   resources :experience_levels
   resources :attack_bonus
   resources :saves
