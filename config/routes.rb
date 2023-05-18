@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :personal_equips
+  resources :levels
   resources :playe_heritages
   resources :player_classes
   resources :turnings

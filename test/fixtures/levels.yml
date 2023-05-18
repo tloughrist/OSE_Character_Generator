@@ -1,0 +1,53 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: 1
+  hit_dice: MyString
+  attack_bonus: 1
+  xp: 1
+  death: 1
+  wands: 1
+  paralysis: 1
+  breath: 1
+  spells: 1
+  sp_1: 1
+  sp_2: 1
+  sp_3: 1
+  sp_4: 1
+  sp_5: 1
+  sp_6: 1
+  t_1: MyString
+  t_2: MyString
+  t_3: MyString
+  t_4: MyString
+  t_5: MyString
+  t_6: MyString
+  t_7_9: MyString
+  as_mod: 1
+  track: MyString
+
+two:
+  level: 1
+  hit_dice: MyString
+  attack_bonus: 1
+  xp: 1
+  death: 1
+  wands: 1
+  paralysis: 1
+  breath: 1
+  spells: 1
+  sp_1: 1
+  sp_2: 1
+  sp_3: 1
+  sp_4: 1
+  sp_5: 1
+  sp_6: 1
+  t_1: MyString
+  t_2: MyString
+  t_3: MyString
+  t_4: MyString
+  t_5: MyString
+  t_6: MyString
+  t_7_9: MyString
+  as_mod: 1
+  track: MyString

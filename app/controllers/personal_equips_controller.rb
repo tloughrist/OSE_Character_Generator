@@ -1,0 +1,2 @@
+class PersonalEquipsController < ApplicationController
+end

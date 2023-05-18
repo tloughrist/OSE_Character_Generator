@@ -1,2 +1,0 @@
-class ExperienceLevelsController < ApplicationController
-end
