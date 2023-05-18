@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :personal_spells
   resources :personal_equips
   resources :levels
   resources :playe_heritages

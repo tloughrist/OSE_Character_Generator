@@ -1,0 +1,2 @@
+module PersonalSpellsHelper
+end

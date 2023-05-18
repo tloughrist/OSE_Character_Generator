@@ -1,6 +1,7 @@
 class CreateLevels < ActiveRecord::Migration[7.0]
   def change
     create_table :levels do |t|
+      t.belongs_to(:char_class, foreign_key: true)
       t.integer :level
       t.string :hit_dice
       t.integer :attack_bonus
@@ -16,15 +17,15 @@ class CreateLevels < ActiveRecord::Migration[7.0]
       t.integer :sp_4
       t.integer :sp_5
       t.integer :sp_6
-      t.string :t_1
-      t.string :t_2
-      t.string :t_3
-      t.string :t_4
-      t.string :t_5
-      t.string :t_6
-      t.string :t_7_9
-      t.integer :as_mod
-      t.string :track
+      t.string :turn_1
+      t.string :turn_2
+      t.string :turn_3
+      t.string :turn_4
+      t.string :turn_5
+      t.string :turn_6
+      t.string :turn_7_9
+      t.integer :assas_mod
+      t.integer :track
 
       t.timestamps
     end
