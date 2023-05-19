@@ -5,7 +5,6 @@ class CreateEquips < ActiveRecord::Migration[7.0]
       t.boolean :weapon
       t.string :damage
       t.string :attack_modifier
-      t.text :special
       t.string :range
       t.boolean :blunt
       t.boolean :brace

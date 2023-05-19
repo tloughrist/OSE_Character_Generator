@@ -5,8 +5,8 @@ class SpellsController < ApplicationController
 
   private
 
-  def user_params
-    params.permit(:username, :password)
+  def spell_params
+    params.require(spell).permit(:char_class, :level, :duration, :range, :text)
   end
 
   def authorize

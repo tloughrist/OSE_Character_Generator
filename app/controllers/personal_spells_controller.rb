@@ -1,12 +1,12 @@
 class PersonalSpellsController < ApplicationController
+
   before_action :authorize
-  skip_before_action :authorize, only: [:create]
 
 
   private
 
-  def user_params
-    params.permit(:username, :password)
+  def personal_spell_params
+    params.require(personal_spell).permit(:character, :spell, :memorized)
   end
 
   def authorize

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'signup', to: "signup#index"
+  get 'login', to: "login#index"
+
   resources :personal_spells
   resources :personal_equips
   resources :levels
@@ -18,5 +21,6 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root "articles#index"
+  root "welcome#index"
+
 end

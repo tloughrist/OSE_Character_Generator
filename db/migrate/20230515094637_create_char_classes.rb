@@ -9,7 +9,7 @@ class CreateCharClasses < ActiveRecord::Migration[7.0]
       t.integer :max_level
       t.string :languages
       t.text :description
-      t.text :abilities
+      t.text :special
 
       t.timestamps
     end

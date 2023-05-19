@@ -1,11 +1,12 @@
 class PersonalEquipsController < ApplicationController
+
   before_action :authorize
 
 
   private
 
-  def user_params
-    params.permit(:username, :password)
+  def personal_equip_params
+    params.require(personal_equip).permit(:character, :equip, :location)
   end
 
   def authorize
