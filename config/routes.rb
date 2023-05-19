@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'signup', to: "signup#index"
-  get 'login', to: "login#index"
+  get 'welcome/index', to: "welcome#index"
+  get 'welcome/signup', to: "welcome#signup"
+  get 'welcome/login', to: "welcome#login"
 
   resources :personal_spells
   resources :personal_equips

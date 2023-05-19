@@ -1,5 +1,14 @@
 <div>
   <h1 class="font-bold text-4xl">OSE Character Record</h1>
-  <p><a href="/login">Login</a></p>
-  <p><a href="/signup">Signup</a></p>
+  <div>
+    <%= turbo_frame_tag "login" do %>
+      <%= link_to "Login", welcome_login_url %>
+    <% end %>
+  </div>
+  <div>
+    <%= turbo_frame_tag "signup" do %>
+      <%= link_to "Signup", welcome_signup_url %>
+    <% end %>
+  </div>
 </div>
+

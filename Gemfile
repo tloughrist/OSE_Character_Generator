@@ -67,3 +67,6 @@ gem "tailwindcss-rails", "~> 2.0"
 
 # Turbo for rails instead of js
 gem 'turbo-rails'
+
+# Importmap for rails
+gem "importmap-rails", "~> 1.1"
