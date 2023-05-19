@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'welcome/index', to: "welcome#index"
   get 'welcome/signup', to: "welcome#signup"
   get 'welcome/login', to: "welcome#login"
+  get 'welcome/forgotpassword', to: "welcome#forgotpassword"
 
   resources :personal_spells
   resources :personal_equips
