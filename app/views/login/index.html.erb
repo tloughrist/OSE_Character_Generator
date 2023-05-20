@@ -13,12 +13,21 @@
         </div>
         <div>
           <%= form.label :password, "Password" %>
-          <%= form.text_field :password %>
+          <%= form.password_field :password %>
         </div>
-        <%= form.submit "Submit" %>
+        <button class="btn">
+          <%= form.submit "Submit" %>
+        </button>
       <% end %>
-      <%= link_to "Create Account", login_signup_url %>
-      <%= link_to "Forgot password?", login_forgotpassword_url %>
+      <button class="btn">
+        <%= link_to "Create Account", login_signup_url %>
+      </button>
+      <button class="btn">
+        <%= link_to "Recover password", login_forgotpassword_url %>
+      </button>
+      <button class="btn">
+        <%= link_to "Logout", login_logout_url %>
+      </button>
     <% end %>
   </div>
 </div>

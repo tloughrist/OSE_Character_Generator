@@ -2,7 +2,9 @@ class CharactersController < ApplicationController
 
   before_action :authorize
 
-
+  def index
+  end
+  
   private
 
   def character_params
