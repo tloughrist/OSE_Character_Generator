@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: 'Courier New', system-ui, monospace;
+    font-family: 'Noto-sans', system-ui, sans-serif;
   }
 }
 

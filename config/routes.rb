@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
-  #get 'welcome/index', to: "welcome#index"
+  get 'home', to: "home#index"
+  get 'login', to: "login#index"
   get 'login/signup', to: "login#signup"
-  get '/login', to: "login#index"
   get 'login/forgotpassword', to: "login#forgotpassword"
+  get 'characters', to: "characters#index"
+  get 'char_classes', to: "char_classes#index"
+  get 'char_heritages', to: "char_heritages#index"
+  get 'equips', to: "equips#index"
+  get 'spells', to: "spells#index"
 
   resources :personal_spells
   resources :personal_equips
