@@ -7,15 +7,17 @@
     >
   </div>
   <h1 class="font-bold text-4xl">Character Record</h1>
-  <div>
-    <%= turbo_frame_tag "login" do %>
-      <%= link_to "Login", welcome_login_url %>
-    <% end %>
-  </div>
-  <div>
-    <%= turbo_frame_tag "signup" do %>
-      <%= link_to "Signup", welcome_signup_url %>
-    <% end %>
+  <div class="navbar">
+    <div class="btn btn-ghost normal-case text-xl">
+      <%= turbo_frame_tag "login" do %>
+        <%= link_to "+ Login", welcome_login_url %>
+      <% end %>
+    </div>
+    <div class="btn btn-ghost normal-case text-xl">
+      <%= turbo_frame_tag "login" do %>
+        <%= link_to "+ Login", welcome_login_url %>
+      <% end %>
+    </div>
   </div>
 </div>
 

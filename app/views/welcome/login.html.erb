@@ -1,9 +1,12 @@
 <%= turbo_frame_tag "login" do %>
-  <%= link_to "Login", welcome_index_url, data: { turbo_frame: "_top" }  %>
-  <div class="max-w-sm lg:max-w-full lg:flex">
-    <div class="border-r border-b border-l border-gray-400 lg:border-r-0 lg:border-t lg:border-gray-400 lg:h-100 lg:w-48 flex-none bg-cover rounded-t lg:rounded-r-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/img/tramp_minotaur.jpg')" title="Mighty minotaur">
-    </div>
-    <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+  <%= link_to "- Login", welcome_index_url, data: { turbo_frame: "_top" }  %>
+  <div class="card card-side bg-base-100 shadow-xl mt-4">
+    <figure><img
+      src='/img/tramp_minotaur.jpg'
+      alt="Might minotaur"
+      class="h-80"
+    /></figure>
+    <div class="card-body">
       <%= form_with do |form| %>
         <div>
           <%= form.label :username, "Username" %>
@@ -15,6 +18,8 @@
         </div>
         <%= form.submit "Submit" %>
       <% end %>
-      <%= link_to "Forgot password?", welcome_forgotpassword_url %>    </div>
+      <%= link_to "Create Account", welcome_signup_url %>
+      <%= link_to "Forgot password?", welcome_forgotpassword_url %>
+    </div>
   </div>
 <% end %>
