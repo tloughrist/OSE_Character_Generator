@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'welcome/index', to: "welcome#index"
-  get 'welcome/signup', to: "welcome#signup"
-  get 'welcome/login', to: "welcome#login"
-  get 'welcome/forgotpassword', to: "welcome#forgotpassword"
+  #get 'welcome/index', to: "welcome#index"
+  get 'login/signup', to: "login#signup"
+  get '/login', to: "login#index"
+  get 'login/forgotpassword', to: "login#forgotpassword"
 
   resources :personal_spells
   resources :personal_equips
@@ -23,6 +23,6 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root "welcome#index"
+  root "home#index"
 
 end
