@@ -18,5 +18,8 @@ module OseChar
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Filter passwords out of the log file
+    config.filter_parameters << :password
   end
 end
