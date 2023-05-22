@@ -11,7 +11,6 @@
     <%= stylesheet_link_tag "application" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body class="font-sans font-light" >
     <header class="m-6">
       <img
@@ -20,30 +19,6 @@
           class="max-w-sm"
       />
       <h1 class="text-4xl">Character Record</h1>
-      <div class="navbar">
-        <button class="btn btn-ghost normal-case text-xl">
-          <%= link_to "About", home_url %>
-        </button>
-        <button class="btn btn-ghost normal-case text-xl">
-          <%= link_to "Login", login_url %>
-        </button>
-        <button class="btn btn-ghost normal-case text-xl">
-          <img src='/img/lock.png' alt="lock icon" class="w-2 mr-1" />
-          <%= link_to "Characters", characters_url %>
-        </button>
-        <button class="btn btn-ghost normal-case text-xl">
-          <%= link_to "Classes", char_classes_url %>
-        </button>
-        <button class="btn btn-ghost normal-case text-xl">
-          <%= link_to "Heritages", char_heritages_url %>
-        </button>
-        <button class="btn btn-ghost normal-case text-xl">
-          <%= link_to "Equipment", equips_url %>
-        </button>
-        <button class="btn btn-ghost normal-case text-xl">
-          <%= link_to "Spells", spells_url %>
-        </button>
-      </div>
     </header>
     <main class="container flex">
       <%= yield %>
