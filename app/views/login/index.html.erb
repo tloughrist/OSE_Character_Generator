@@ -1,28 +1,5 @@
 <%= turbo_frame_tag "content" do %>
-  <div class="navbar">
-    <button class="btn btn-ghost normal-case text-xl">
-      <%= link_to "About", home_url %>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <%= link_to "Login", login_url %>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <img src='/img/lock.png' alt="lock icon" class="w-2 mr-1" />
-      <%= link_to "Characters", characters_url %>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <%= link_to "Classes", char_classes_url %>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <%= link_to "Heritages", char_heritages_url %>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <%= link_to "Equipment", equips_url %>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <%= link_to "Spells", spells_url %>
-    </button>
-  </div>
+  <% render "shared/navbar" %>
   <div class="card lg:card-side bg-zinc-200 shadow-xl ml-6">
     <figure><img
       src='/img/tramp_minotaur.jpg'
@@ -30,26 +7,10 @@
       class="h-80"
     /></figure>
     <div class="card-body">
-      <%= turbo_frame_tag "login" do %>
-        <%= form_with do |form| %>
-          <div>
-            <%= form.label :username, "Username" %>
-            <%= form.text_field :username %>
-          </div>
-          <div>
-            <%= form.label :password, "Password" %>
-            <%= form.password_field :password %>
-          </div>
-          <button class="btn">
-            <%= form.submit "Submit" %>
-          </button>
-        <% end %>
-        <button class="btn">
-          <%= link_to "Create Account", login_signup_url %>
-        </button>
-        <button class="btn">
-          <%= link_to "Recover password", login_forgotpassword_url %>
-        </button>
+      <% if User.is_logged_in? %>
+        <p>Logged in</p>
+      <% else %>
+        <p>Not logged in</p>
       <% end %>
     </div>
   </div>

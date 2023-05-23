@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   post 'login', to: "sessions#create"
   post 'login/signup', to: "users#create"
   get 'me', to: "users#self"
-  delete 'login/logout', to: "sessions#destroy"
+  delete 'login', to: "sessions#destroy"
 
   resources :personal_spells
   resources :personal_equips

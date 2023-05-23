@@ -9,6 +9,8 @@ class UsersController < ApplicationController
       if user.valid?
         session[:user_id] = user.id
         render json: user, status: :created
+        flash[:success] = "You're logged in as #{user.username}"
+        redirect_to 'home'
       else
         render json: { errors: user.errors.full_messages }, status: :unprocessable_entity
       end
