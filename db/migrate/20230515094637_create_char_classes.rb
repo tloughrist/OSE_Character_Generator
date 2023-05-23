@@ -6,7 +6,6 @@ class CreateCharClasses < ActiveRecord::Migration[7.0]
       t.string :prime_requisite
       t.string :armor_allowed
       t.string :weapons_allowed
-      t.integer :max_level
       t.string :languages
       t.text :description
       t.text :special
