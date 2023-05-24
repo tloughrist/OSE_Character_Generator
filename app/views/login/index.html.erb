@@ -3,14 +3,14 @@
   <div class="card lg:card-side bg-zinc-200 shadow-xl ml-6">
     <figure><img
       src='/img/tramp_minotaur.jpg'
-      alt="Mighty minotaur"
-      class="h-80"
+      alt='Mighty minotaur'
+      class='h-80'
     /></figure>
     <div class="card-body">
       <% if :is_logged_in? %>
-        <button class="btn">
-          <%= link_to 'Logout', login_url, :method => 'delete' %>
-        </button>
+        <div class="btn">
+          <%= button_to "delete", {:controller => :sessions, :action => 'destroy' }, :method => :delete %>
+        </div>
       <% else %>
         <%= turbo_frame_tag "login" do %>
           <%= form_with do |form| %>
