@@ -1,0 +1,30 @@
+<div class="card lg:card-side bg-zinc-200 shadow-xl ml-6">
+  <figure><img
+    src='/img/tramp_minotaur.jpg'
+    alt='Mighty minotaur'
+    class='h-80'
+  /></figure>
+  <div class="card-body">
+    <%= turbo_frame_tag "login" do %>
+      <%= form_with do |form| %>
+        <div>
+          <%= form.label :username, "Username" %>
+          <%= form.text_field :username %>
+        </div>
+        <div>
+          <%= form.label :password, "Password" %>
+          <%= form.password_field :password %>
+        </div>
+        <button class="btn">
+          <%= form.submit "Submit" %>
+        </button>
+      <% end %>
+      <button class="btn">
+        <%= link_to "Create Account", login_signup_url %>
+      </button>
+      <button class="btn">
+        <%= link_to "Recover password", login_forgotpassword_url %>
+      </button>
+    <% end %>
+  </div>
+</div>
