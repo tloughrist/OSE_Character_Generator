@@ -1,5 +1,8 @@
 <%= turbo_frame_tag "content" do %>
-  <% render "shared_views/navbar" %>
-  <% render "login_card" %>
+  <% if is_logged_in %>
+    <% render "logout_card" %>
+  <% else %>
+    <% render "login_card" %>
+  <% end %>
 <% end %>
 
