@@ -4,7 +4,7 @@
     alt='Mighty minotaur'
     class='h-80'
   /></figure>
-  <div class="card-body">
+  <div class="card-body w-fit">
     <%= turbo_frame_tag "login" do %>
       <%= form_with do |form| %>
         <div>
@@ -15,17 +15,15 @@
           <%= form.label :password, "Password" %>
           <%= form.password_field :password %>
         </div>
-        <div class="card-actions flex flex-col mt-3">
-          <button class="btn">
-            <%= form.submit "SUBMIT" %>
-          </button>
-          <button class="btn">
-            <%= link_to "Create Account", login_signup_url %>
-          </button>
-          <button class="btn">
-            <%= link_to "Recover password", login_forgotpassword_url %>
-          </button>
-        </div>
+        <button class="btn">
+          <%= form.submit "SUBMIT" %>
+        </button>
+        <button class="btn btn-sm">
+          <%= link_to "Create Account", login_signup_url %>
+        </button>
+        <button class="btn btn-sm">
+          <%= link_to "Recover password", login_forgotpassword_url %>
+        </button>
       <% end %>
     <% end %>
   </div>
