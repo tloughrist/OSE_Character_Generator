@@ -8,26 +8,20 @@
     <%= turbo_frame_tag "login" do %>
       <%= form_with do |form| %>
         <div>
-          <%= form.label :username, "Username" %>
-          <%= form.text_field :username, class: "w-full max-w-xs" %>
+          <%= form.text_field :username, placeholder: "username", class: "w-full max-w-xs" %>
         </div>
         <div class="mt-2">
-          <%= form.label :password, "Password" %>
-          <%= form.password_field :password, class: "w-full max-w-xs" %>
+          <%= form.password_field :password, placeholder: "password",class: "w-full max-w-xs" %>
         </div>
         <div class="mt-2">
           <div class="block">
             <button class="btn">
-              <%= form.submit "SUBMIT" %>
+              <%= form.submit "LOGIN" %>
             </button>
           </div>
-          <div class="block">
-            <button class="btn btn-sm mt-2">
-              <%= link_to "Create Account", login_signup_url %>
-            </button>
-            <button class="btn btn-sm">
-              <%= link_to "Recover password", login_forgotpassword_url %>
-            </button>
+          <div class="block mt-2">
+            <%= link_to "Create Account", login_signup_url, class: "btn" %>
+            <%= link_to "Recover password", login_forgotpassword_url, class: "btn" %>
           </div>
         </div>
       <% end %>

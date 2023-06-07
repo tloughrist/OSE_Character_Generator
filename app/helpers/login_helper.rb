@@ -1,7 +1,7 @@
 module LoginHelper
 
   def is_logged_in
-    true
+    false
   end
 
 end
