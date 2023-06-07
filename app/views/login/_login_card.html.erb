@@ -1,10 +1,10 @@
 <div class="card lg:card-side bg-zinc-200 shadow-xl ml-6">
-  <figure><img
+  <figure class="h-80"><img
     src='/img/tramp_minotaur.jpg'
     alt='Mighty minotaur'
     class='h-80'
   /></figure>
-  <div class="card-body w-fit">
+  <div class="card-body h-80">
     <%= turbo_frame_tag "login" do %>
       <%= form_with do |form| %>
         <div>
@@ -15,13 +15,13 @@
         </div>
         <div class="mt-2">
           <div class="block">
-            <button class="btn">
-              <%= form.submit "LOGIN" %>
-            </button>
+            <%= form.submit "LOGIN", class: "btn" %>
           </div>
           <div class="block mt-2">
             <%= link_to "Create Account", login_signup_url, class: "btn" %>
-            <%= link_to "Recover password", login_forgotpassword_url, class: "btn" %>
+          </div>
+          <div class="block mt-2">
+            <%= link_to "Recover password", login_forgotpassword_url, class: "btn btn-sm" %>
           </div>
         </div>
       <% end %>

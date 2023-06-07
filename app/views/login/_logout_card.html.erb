@@ -1,7 +1,11 @@
 <div class="card lg:card-side bg-zinc-200 shadow-xl ml-6">
-  <figure><img src='/img/tramp_goblin.jpg' alt='Charging goblin' class="h-80" /></figure>
-  <div class="card-body">
-    <div class="card-actions lg:h-80">
+  <figure class="h-80"><img
+    src="/img/tramp_minotaur.jpg"
+    alt="Mighty minotaur"
+    class="h-80"
+  /></figure>
+  <div class="card-body h-80">
+    <div class="card-actions">
       <%= button_to "Logout", {:controller => :sessions, :action => 'destroy' }, :method => :delete, class: "btn" %>
     </div>
   </div>
