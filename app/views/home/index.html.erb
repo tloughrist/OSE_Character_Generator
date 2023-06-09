@@ -1,50 +1,54 @@
-<% if is_logged_in %>
-  <div class="navbar">
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/home" data-turbo-frame="content">About</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/login" data-turbo-frame="content">Logout</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/characters" data-turbo-frame="content">Characters</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/char_classes" data-turbo-frame="content">Classes</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/char_heritages" data-turbo-frame="content">Heritage</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/equips" data-turbo-frame="content">Equipment</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/spells" data-turbo-frame="content">Spells</a>
-    </button>
-  </div>
-<% else %>
-  <div class="navbar">
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/home" data-turbo-frame="content">About</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/login" data-turbo-frame="content">Login</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/char_classes" data-turbo-frame="content">Classes</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/char_heritages" data-turbo-frame="content">Heritage</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/equips" data-turbo-frame="content">Equipment</a>
-    </button>
-    <button class="btn btn-ghost normal-case text-xl">
-      <a href="/spells" data-turbo-frame="content">Spells</a>
-    </button>
-  </div>
-<% end %>
-<div class="flex flex-col w-fit">
-  <%= turbo_frame_tag "content" do %>
+<div class="flex flex-col">
+  <% if is_logged_in %>
+    <div class="navbar">
+      <button class="btn btn-ghost normal-case text-xl">
+        <a href="/home" data-turbo-frame="content">Character Record</a>
+      </button>
+      <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="/login" data-turbo-frame="content">Logout</a></li>
+        <li>
+          <details>
+            <summary>
+              Menu
+            </summary>
+            <ul class="p-2 bg-base-100">
+              <li><a href="/characters" data-turbo-frame="content">Characters</a></li>
+              <li><a href="/char_classes" data-turbo-frame="content">Classes</a></li>
+              <li><a href="/char_heritages" data-turbo-frame="content">Heritages</a></li>
+              <li><a href="/equips" data-turbo-frame="content">Equipment</a></li>
+              <li><a href="/spells" data-turbo-frame="content">Spells</a><li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+  <% else %>
+    <div class="navbar">
+      <button class="btn btn-ghost normal-case text-xl">
+        <a href="/home" data-turbo-frame="content">Character Record</a>
+      </button>
+      <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="/login" data-turbo-frame="content">Login</a></li>
+        <li>
+          <details>
+            <summary>
+              Menu
+            </summary>
+            <ul class="p-2 bg-base-100">
+              <li><a href="/char_classes" data-turbo-frame="content">Classes</a></li>
+              <li><a href="/char_heritages" data-turbo-frame="content">Heritages</a></li>
+              <li><a href="/equips" data-turbo-frame="content">Equipment</a></li>
+              <li><a href="/spells" data-turbo-frame="content">Spells</a><li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
   <% end %>
+  <div class="flex flex-col w-fit">
+    <%= turbo_frame_tag "content" do %>
+    <% end %>
+  </div>
 </div>
