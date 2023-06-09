@@ -14,17 +14,15 @@
           <%= form.password_field :password, placeholder: "password",class: "w-full max-w-xs" %>
         </div>
         <div class="mt-2">
-          <div class="block">
-            <%= form.submit "LOGIN", class: "btn" %>
-          </div>
-          <div class="block mt-2">
-            <%= link_to "Create Account", login_signup_url %>
-          </div>
-          <div class="block mt-2">
-            <%= link_to "Recover Password", login_forgotpassword_url %>
-          </div>
+          <%= form.submit "LOGIN", class: "btn" %>
         </div>
       <% end %>
+      <div class="block mt-2">
+        <%= link_to "Create Account", login_signup_url %>
+      </div>
+      <div class="block mt-2">
+        <%= link_to "Recover Password", login_forgotpassword_url %>
+      </div>      
     <% end %>
   </div>
 </div>
