@@ -12,9 +12,11 @@
     <div class="mt-2">
       <%= form.email_field :email, placeholder: "email",  class: "w-full max-w-xs"  %>
     </div>
-    <div class="mt-3">
+    <div class="mt-2">
       <%= form.submit "SUBMIT", class: "btn" %>
-      <%= link_to "Back to Login", login_url, class:"btn" %>
+    </div>
+    <div class="mt-2">
+      <%= link_to "Back to Login", login_url %>
     </div>
   <% end %>
 <% end %>
